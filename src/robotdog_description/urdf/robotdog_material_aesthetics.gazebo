@@ -1,0 +1,73 @@
+  <?xml version="1.0" encoding="utf-8"?>
+  <robot name="robotdog_description" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+  <xacro:property name="green" value="Gazebo/Green" />
+  <xacro:property name="black" value="Gazebo/Black" />
+  <xacro:property name="red" value="Gazebo/Red" />
+  <xacro:property name="silver" value="Gazebo/Grey" />
+  <xacro:property name="smoke_black" value="Gazebo/DarkGrey" />
+  <xacro:property name="glossy_black" value="Gazebo/FlatBlack" />
+  <xacro:property name="white" value="Gazebo/White" />
+
+
+  <gazebo reference="Base_link">
+    <material>${white}</material>
+
+  </gazebo>
+
+  <gazebo reference="FL_Hip">
+    <material>${glossy_black}</material>
+
+  </gazebo>
+
+  <gazebo reference="FR_Hip">
+    <material>${glossy_black}</material>
+
+  </gazebo>
+
+  <gazebo reference="BL_Hip">
+    <material>${glossy_black}</material>
+  </gazebo>
+
+  <gazebo reference="BR_Hip">
+    <material>${glossy_black}</material>
+  </gazebo>
+
+  <gazebo reference="FL_Hip">
+    <material>${black}</material>
+  </gazebo>
+
+  <gazebo reference="FR_Upper">
+    <material>${red}</material> 
+  </gazebo>
+
+  <gazebo reference="FL_Upper">
+    <material>${red}</material>
+  </gazebo>
+
+  <gazebo reference="BL_Upper">
+    <material>${red}</material>
+  </gazebo>
+
+  <gazebo reference="BR_Upper">
+    <material>${red}</material>
+  </gazebo>
+
+  <gazebo reference="FR_Lower">
+
+    <material>${smoke_black}</material>
+  </gazebo>
+
+  <gazebo reference="FL_Lower">
+    <material>${smoke_black}</material>
+  </gazebo>
+
+  <gazebo reference="BL_Lower">
+    <material>${smoke_black}</material>
+  </gazebo>
+
+  <gazebo reference="BR_Lower">
+    <material>${smoke_black}</material>
+  </gazebo>
+
+  </robot>

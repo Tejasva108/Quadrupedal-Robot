@@ -1,0 +1,741 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<robot name="robotdog_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find robotdog_description)/urdf/robotdog_material_aesthetics.gazebo" />
+  <link
+    name="Base_link">
+    <inertial>
+      <origin
+        xyz="0.00285360357534193 -0.0326559499440055 0.000739433788005089"
+        rpy="0 0 0" />
+      <mass
+        value="2.28441064843344" />
+      <inertia
+        ixx="0.00403423342019223"
+        ixy="-4.16063768914087E-08"
+        ixz="1.77405050312107E-07"
+        iyy="0.0149586372321151"
+        iyz="-4.16039036590593E-09"
+        izz="0.0185736059619641" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/Base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/Base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FL_Hip">
+    <inertial>
+      <origin
+        xyz="0.0284550259779061 0.000719016113351276 -0.0047423255334399"
+        rpy="0 0 0" />
+      <mass
+        value="0.105536034878159" />
+      <inertia
+        ixx="3.47668586380274E-05"
+        ixy="-1.49055301878483E-11"
+        ixz="-8.66232521111605E-08"
+        iyy="2.65941519046146E-05"
+        iyz="-1.91464318309678E-10"
+        izz="3.8674339772833E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_Hip_Joint"
+    type="revolute">
+    <origin
+      xyz="0.23522 0.0534000000000002 -0.0573999999999998"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Base_link" />
+    <child
+      link="FL_Hip" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL_Upper">
+    <inertial>
+      <origin
+        xyz="-0.057824030688449 -0.0669807775624287 -0.0177309645268882"
+        rpy="0 0 0" />
+      <mass
+        value="0.119405502326717" />
+      <inertia
+        ixx="0.000330138315304697"
+        ixy="-0.000251550901761739"
+        ixz="-3.7294586344286E-06"
+        iyy="0.00021539319811927"
+        iyz="-4.29609296947043E-06"
+        izz="0.000539714049845813" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="0.01925 0.0102 -0.0342"
+      rpy="0 0 0" />
+    <parent
+      link="FL_Hip" />
+    <child
+      link="FL_Upper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL_Lower">
+    <inertial>
+      <origin
+        xyz="0.0731964645168235 -0.0623514337290087 -0.00717259618003124"
+        rpy="0 0 0" />
+      <mass
+        value="0.0971546619191035" />
+      <inertia
+        ixx="0.000218036909522413"
+        ixy="0.000223746945917003"
+        ixz="2.90574425455485E-06"
+        iyy="0.000253514990904301"
+        iyz="-2.55818904257537E-06"
+        izz="0.00045958150372493" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FL_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_Lower_Link"
+    type="revolute">
+    <origin
+      xyz="-0.12333 -0.15745 -0.011"
+      rpy="0 0 0" />
+    <parent
+      link="FL_Upper" />
+    <child
+      link="FL_Lower" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR_Hip">
+    <inertial>
+      <origin
+        xyz="0.0284550229110587 0.000718908700007497 0.00474219570207994"
+        rpy="0 0 0" />
+      <mass
+        value="0.105536594322618" />
+      <inertia
+        ixx="3.47671515756509E-05"
+        ixy="2.44755443197281E-11"
+        ixz="8.66270201171481E-08"
+        iyy="2.65943508440931E-05"
+        iyz="-2.29631524976073E-11"
+        izz="3.86745459415074E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_Hip_Joint"
+    type="revolute">
+    <origin
+      xyz="0.23522 -0.126 -0.0574"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_link" />
+    <child
+      link="FR_Hip" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR_Upper">
+    <inertial>
+      <origin
+        xyz="-0.0578240306884481 -0.0669807775624277 0.0177309645268881"
+        rpy="0 0 0" />
+      <mass
+        value="0.119405502326716" />
+      <inertia
+        ixx="0.000330138315304566"
+        ixy="-0.000251550901761772"
+        ixz="3.72945863442854E-06"
+        iyy="0.000215393198119445"
+        iyz="4.29609296947046E-06"
+        izz="0.000539714049845857" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="0.01925 0.0102 0.0342"
+      rpy="0 0 0" />
+    <parent
+      link="FR_Hip" />
+    <child
+      link="FR_Upper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR_Lower">
+    <inertial>
+      <origin
+        xyz="0.0731964645168236 -0.0623514337290087 0.00717259618003122"
+        rpy="0 0 0" />
+      <mass
+        value="0.0971546619191037" />
+      <inertia
+        ixx="0.000218036909522413"
+        ixy="0.000223746945917004"
+        ixz="-2.90574425455477E-06"
+        iyy="0.000253514990904302"
+        iyz="2.55818904257529E-06"
+        izz="0.00045958150372493" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/FR_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.12333 -0.15745 0.011"
+      rpy="0 0 0" />
+    <parent
+      link="FR_Upper" />
+    <child
+      link="FR_Lower" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BL_Hip">
+    <inertial>
+      <origin
+        xyz="-0.0298999293541753 0.000718838953765906 -0.00474232553343987"
+        rpy="0 0 0" />
+      <mass
+        value="0.105536034878159" />
+      <inertia
+        ixx="3.47668586380274E-05"
+        ixy="-1.49055301844634E-11"
+        ixz="8.66232521111763E-08"
+        iyy="2.65941519046146E-05"
+        iyz="1.9146431831168E-10"
+        izz="3.8674339772833E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_Hip_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.24518 0.0534 -0.0574"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_link" />
+    <child
+      link="BL_Hip" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BL_Upper">
+    <inertial>
+      <origin
+        xyz="-0.0578240306881795 -0.0669807775626623 -0.0177309645268882"
+        rpy="0 0 0" />
+      <mass
+        value="0.119405502326716" />
+      <inertia
+        ixx="0.000330138315306784"
+        ixy="-0.000251550901761257"
+        ixz="-3.72945863441134E-06"
+        iyy="0.000215393198117185"
+        iyz="-4.2960929694856E-06"
+        izz="0.000539714049845815" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.03975 0.0102 -0.0342"
+      rpy="0 0 0" />
+    <parent
+      link="BL_Hip" />
+    <child
+      link="BL_Upper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BL_Lower">
+    <inertial>
+      <origin
+        xyz="0.0731964645177827 -0.0623514337291235 -0.00717259618003124"
+        rpy="0 0 0" />
+      <mass
+        value="0.0971546619191038" />
+      <inertia
+        ixx="0.000218036909520079"
+        ixy="0.000223746945916819"
+        ixz="2.90574425456816E-06"
+        iyy="0.000253514990906636"
+        iyz="-2.55818904256021E-06"
+        izz="0.000459581503724931" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BL_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.12333 -0.15745 -0.011"
+      rpy="0 0 0" />
+    <parent
+      link="BL_Upper" />
+    <child
+      link="BL_Lower" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BR_Hip">
+    <inertial>
+      <origin
+        xyz="-0.0298999186279639 0.000718938745108484 0.00474219570207993"
+        rpy="0 0 0" />
+      <mass
+        value="0.105536594322618" />
+      <inertia
+        ixx="3.4767151575651E-05"
+        ixy="2.44755443024005E-11"
+        ixz="-8.662702011715E-08"
+        iyy="2.65943508440932E-05"
+        iyz="2.29631525086619E-11"
+        izz="3.86745459415074E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_Hip_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.24518 -0.126 -0.0574"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_link" />
+    <child
+      link="BR_Hip" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BR_Upper">
+    <inertial>
+      <origin
+        xyz="-0.0578240306881781 -0.0669807775626609 0.0177309645268881"
+        rpy="0 0 0" />
+      <mass
+        value="0.119405502326716" />
+      <inertia
+        ixx="0.000330138315306594"
+        ixy="-0.00025155090176133"
+        ixz="3.72945863441099E-06"
+        iyy="0.00021539319811737"
+        iyz="4.29609296948556E-06"
+        izz="0.000539714049845811" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.03975 0.0102 0.0342"
+      rpy="0 0 0" />
+    <parent
+      link="BR_Hip" />
+    <child
+      link="BR_Upper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+  <link
+    name="BR_Lower">
+    <inertial>
+      <origin
+        xyz="0.0731964645177827 -0.0623514337291235 0.00717259618003119"
+        rpy="0 0 0" />
+      <mass
+        value="0.0971546619191036" />
+      <inertia
+        ixx="0.000218036909520079"
+        ixy="0.000223746945916819"
+        ixz="-2.90574425456811E-06"
+        iyy="0.000253514990906636"
+        iyz="2.55818904256013E-06"
+        izz="0.000459581503724931" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws_copy/src//robotdog_description/meshes/BR_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.12333 -0.15745 0.011"
+      rpy="0 0 0" />
+    <parent
+      link="BR_Upper" />
+    <child
+      link="BR_Lower" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="6"
+      velocity="0" />
+  </joint>
+</robot>

@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotdog_description">
+  <link
+    name="Base_Link">
+    <inertial>
+      <origin
+        xyz="-7.84481190910076E-05 9.96733659044917E-17 0.0276909503922715"
+        rpy="0 0 0" />
+      <mass
+        value="2.00531303585119" />
+      <inertia
+        ixx="0.00934139973212106"
+        ixy="8.35116223164171E-17"
+        ixz="1.57196841864407E-19"
+        iyy="0.0212135898007242"
+        iyz="2.84536962012482E-17"
+        izz="0.0292728369971488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/Base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.35" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/Base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="base_link">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <link
+    name="FR_Hip">
+    <inertial>
+      <origin
+        xyz="-0.00473054572745188 0.000686566330239991 0.0301046682916989"
+        rpy="0 0 0" />
+      <mass
+        value="0.104769657271358" />
+      <inertia
+        ixx="3.85212414363344E-05"
+        ixy="4.77076433847104E-22"
+        ixz="7.25509606366813E-08"
+        iyy="2.70037422160745E-05"
+        iyz="2.77459790190287E-11"
+        izz="3.40683391100789E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FR_Hip">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FR_Hip_joint"
+    type="revolute">
+    <origin
+      xyz="0.184799999999999 -0.0847000000000012 0.0152500000000003"
+      rpy="1.5707963267949 0 1.57079632679489" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="FR_Hip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="100000"/>
+    <initial_position>0.0</initial_position>
+  </joint>
+  <link
+    name="FR_Upper">
+    <inertial>
+      <origin
+        xyz="0.0628202825922447 0.0177004244849183 0.0162228421086605"
+        rpy="0 0 0" />
+      <mass
+        value="0.0741932452755275" />
+      <inertia
+        ixx="1.89822094241295E-05"
+        ixy="-4.39293833918199E-05"
+        ixz="-2.56875740181025E-06"
+        iyy="0.000188647108042994"
+        iyz="-7.31902192542021E-07"
+        izz="0.000205031206642321" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FR_Upper">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FR_Upper_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0342 0.0102000000000001 0.02025"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="FR_Hip" />
+    <child
+      link="FR_Upper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="FR_Lower">
+    <inertial>
+      <origin
+        xyz="0.0588383128829638 -0.0317317737245921 0.00540120653041473"
+        rpy="0 0 0" />
+      <mass
+        value="0.0651827723145631" />
+      <inertia
+        ixx="4.84853605217161E-05"
+        ixy="7.12364298258215E-05"
+        ixz="-1.96313629069146E-06"
+        iyy="0.000128148615433783"
+        iyz="1.15998738878862E-06"
+        izz="0.000169927951960153" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FR_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FR_Lower">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FR_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="0.14606 0.0341500000000001 0.0109999999999998"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="FR_Upper" />
+    <child
+      link="FR_Lower" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="FL_Hip">
+    <inertial>
+      <origin
+        xyz="0.00473050798932821 0.000686565301440834 0.0295154694806598"
+        rpy="0 0 0" />
+      <mass
+        value="0.104769814265789" />
+      <inertia
+        ixx="3.85211505983496E-05"
+        ixy="4.23831009373808E-22"
+        ixz="7.25535727885608E-08"
+        iyy="2.70038109634252E-05"
+        iyz="-2.7745978984557E-11"
+        izz="3.40682897365269E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FL_Hip">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FL_Hip_joint"
+    type="revolute">
+    <origin
+      xyz="0.184800000000001 0.0846999999999988 0.0152499999999997"
+      rpy="1.5707963267949 0 1.57079632679489" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="FL_Hip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="100000"/>
+    <initial_position>0.0</initial_position>
+
+  </joint>
+  <link
+    name="FL_Upper">
+    <inertial>
+      <origin
+        xyz="0.0641559403079335 0.0119878378000643 -0.0162228421086607"
+        rpy="0 0 0" />
+      <mass
+        value="0.0741932452755278" />
+      <inertia
+        ixx="1.74194910210442E-05"
+        ixy="-4.07702118824661E-05"
+        ixz="2.62697420992405E-06"
+        iyy="0.000190209826446121"
+        iyz="4.82909835476667E-07"
+        izz="0.000205031206642363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FL_Upper">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FL_Upper_joint"
+    type="revolute">
+    <origin
+      xyz="0.0342 0.0102000000000001 0.02025"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="FL_Hip" />
+    <child
+      link="FL_Upper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="FL_Lower">
+    <inertial>
+      <origin
+        xyz="0.0588383128829638 -0.0317317737245921 -0.00540120653041518"
+        rpy="0 0 0" />
+      <mass
+        value="0.0651827723145631" />
+      <inertia
+        ixx="4.8485360521716E-05"
+        ixy="7.12364298258215E-05"
+        ixz="1.96313629069245E-06"
+        iyy="0.000128148615433783"
+        iyz="-1.1599873887892E-06"
+        izz="0.000169927951960153" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/FL_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="FL_Lower">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="FL_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="0.14606 0.0341499999999999 -0.0110000000000003"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="FL_Upper" />
+    <child
+      link="FL_Lower" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="BR_Hip">
+    <inertial>
+      <origin
+        xyz="-0.00473054572745187 0.000686566330239793 -0.0308953317083011"
+        rpy="0 0 0" />
+      <mass
+        value="0.104769657271358" />
+      <inertia
+        ixx="3.85212414363344E-05"
+        ixy="-8.30286481770554E-21"
+        ixz="7.25509606367016E-08"
+        iyy="2.70037422160745E-05"
+        iyz="2.77459790302679E-11"
+        izz="3.40683391100789E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BR_Hip">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BR_Hip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.186800000000001 -0.0846999999999986 0.0152500000000003"
+      rpy="1.5707963267949 0 1.57079632679489" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="BR_Hip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="100000"/>
+    <initial_position>0.0</initial_position>
+
+  </joint>
+  <link
+    name="BR_Upper">
+    <inertial>
+      <origin
+        xyz="0.0628202825923137 0.0177004244846734 0.0162228421086606"
+        rpy="0 0 0" />
+      <mass
+        value="0.0741932452755276" />
+      <inertia
+        ixx="1.89822094237408E-05"
+        ixy="-4.39293833911723E-05"
+        ixz="-2.56875740181315E-06"
+        iyy="0.000188647108043333"
+        iyz="-7.31902192531872E-07"
+        izz="0.000205031206642271" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BR_Upper">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BR_Upper_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0342000000000001 0.0101999999999998 -0.04075"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="BR_Hip" />
+    <child
+      link="BR_Upper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="BR_Lower">
+    <inertial>
+      <origin
+        xyz="0.0588383128827072 -0.0317317737242492 0.00540120653041501"
+        rpy="0 0 0" />
+      <mass
+        value="0.0651827723145631" />
+      <inertia
+        ixx="4.8485360522271E-05"
+        ixy="7.12364298261318E-05"
+        ixz="-1.96313629068693E-06"
+        iyy="0.000128148615433228"
+        iyz="1.15998738879626E-06"
+        izz="0.000169927951960153" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BR_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BR_Lower">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BR_Lower_Joint"
+    type="revolute">
+    <origin
+      xyz="0.14606 0.0341500000000001 0.0109999999999998"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="BR_Upper" />
+    <child
+      link="BR_Lower" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+    
+
+  </joint>
+  <link
+    name="BL_Hip">
+    <inertial>
+      <origin
+        xyz="0.00473050798932817 0.000686565301440688 -0.0308953311159084"
+        rpy="0 0 0" />
+      <mass
+        value="0.104769814265789" />
+      <inertia
+        ixx="3.85211505983496E-05"
+        ixy="-2.03763474679141E-21"
+        ixz="-7.2553572788562E-08"
+        iyy="2.70038109634252E-05"
+        iyz="-2.7745978985107E-11"
+        izz="3.40682897365269E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BL_Hip">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BL_Hip_joint"
+    type="revolute">
+    <origin
+      xyz="-0.186799999999999 0.0847000000000014 0.0152499999999997"
+      rpy="1.5707963267949 0 1.57079632679489" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="BL_Hip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="100000"/>
+    <initial_position>0.0</initial_position>
+
+
+  </joint>
+  <link
+    name="BL_Upper">
+    <inertial>
+      <origin
+        xyz="0.0641559403079802 0.0119878377998139 -0.0162228421086608"
+        rpy="0 0 0" />
+      <mass
+        value="0.0741932452755278" />
+      <inertia
+        ixx="1.74194910206971E-05"
+        ixy="-4.07702118818055E-05"
+        ixz="2.62697420992592E-06"
+        iyy="0.000190209826446441"
+        iyz="4.82909835466445E-07"
+        izz="0.000205031206642336" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BL_Upper">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BL_Upper_joint"
+    type="revolute">
+    <origin
+      xyz="0.0342 0.0101999999999998 -0.04075"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="BL_Hip" />
+    <child
+      link="BL_Upper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+  <link
+    name="BL_Lower">
+    <inertial>
+      <origin
+        xyz="0.0588383128827071 -0.0317317737242484 -0.00540120653041548"
+        rpy="0 0 0" />
+      <mass
+        value="0.065182772314563" />
+      <inertia
+        ixx="4.84853605222713E-05"
+        ixy="7.1236429826132E-05"
+        ixz="1.96313629068793E-06"
+        iyy="0.000128148615433228"
+        iyz="-1.15998738879686E-06"
+        izz="0.000169927951960153" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/tejasva/robotdog_ws/src/robotdog_description/meshes/BL_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="BL_Lower">
+  <self_collide>1</self_collide>
+  </gazebo>
+  <joint
+    name="BL_Lower_joint"
+    type="revolute">
+    <origin
+      xyz="0.14606 0.0341499999999999 -0.0110000000000003"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="BL_Upper" />
+    <child
+      link="BL_Lower" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.3"
+      upper="1.57"
+      effort="2"
+      velocity="0" />
+    <dynamics damping="0.01" friction="10000"/>
+
+  </joint>
+</robot>

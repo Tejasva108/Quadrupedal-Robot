@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="robotdog_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="rubber_friction_mu1" value="1.2" />
+  <xacro:property name="rubber_friction_mu2" value="1.0" />
+  <xacro:property name="metal_friction_mu1" value="0.6" />
+  <xacro:property name="metal_friction_mu2" value="0.5" />
+  <xacro:property name="plastic_friction_mu1" value="0.8" />
+  <xacro:property name="plastic_friction_mu2" value="0.7" />
+  <xacro:property name="caster_metal_friction_mu1" value="0.4" />
+  <xacro:property name="caster_metal_friction_mu2" value="0.3" />
+  
+  <xacro:property name="wheel_restitution" value="0.1" />
+  <xacro:property name="metal_restitution" value="0.2" />
+  <xacro:property name="plastic_restitution" value="0.3" />
+  
+  <xacro:property name="wheel_kp" value="10000000.0" />
+  <xacro:property name="wheel_kd" value="1000.0" />
+  <xacro:property name="standard_kp" value="1000000.0" />
+  <xacro:property name="standard_kd" value="100.0" />
+  
+  <gazebo reference="base_link">
+    <mu1>${metal_friction_mu1}</mu1>
+    <mu2>${metal_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${metal_restitution}</restitution>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>0.01</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${metal_friction_mu1}</mu>
+          <mu2>${metal_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.1</slip1>
+          <slip2>0.1</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="left_back_wheel">
+    <mu1>${rubber_friction_mu1}</mu1>
+    <mu2>${rubber_friction_mu2}</mu2>
+    <kp>${wheel_kp}</kp>
+    <kd>${wheel_kd}</kd>
+    <restitution>${wheel_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.0001</soft_cfm>
+          <soft_erp>0.8</soft_erp>
+          <kp>${wheel_kp}</kp>
+          <kd>${wheel_kd}</kd>
+          <max_vel>100.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${rubber_friction_mu1}</mu>
+          <mu2>${rubber_friction_mu2}</mu2>
+          <fdir1>1 0 0</fdir1>
+          <slip1>0.02</slip1>
+          <slip2>0.02</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="right_back_wheel">
+    <mu1>${rubber_friction_mu1}</mu1>
+    <mu2>${rubber_friction_mu2}</mu2>
+    <kp>${wheel_kp}</kp>
+    <kd>${wheel_kd}</kd>
+    <restitution>${wheel_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.0001</soft_cfm>
+          <soft_erp>0.8</soft_erp>
+          <kp>${wheel_kp}</kp>
+          <kd>${wheel_kd}</kd>
+          <max_vel>100.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${rubber_friction_mu1}</mu>
+          <mu2>${rubber_friction_mu2}</mu2>
+          <fdir1>1 0 0</fdir1>
+          <slip1>0.02</slip1>
+          <slip2>0.02</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="left_front_castor">
+    <mu1>${caster_metal_friction_mu1}</mu1>
+    <mu2>${caster_metal_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${metal_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>10.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${caster_metal_friction_mu1}</mu>
+          <mu2>${caster_metal_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.3</slip1>
+          <slip2>0.3</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="left_front_castor_wheel">
+    <mu1>${plastic_friction_mu1}</mu1>
+    <mu2>${plastic_friction_mu2}</mu2>
+    <kp>${wheel_kp}</kp>
+    <kd>${wheel_kd}</kd>
+    <restitution>${plastic_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.0005</soft_cfm>
+          <soft_erp>0.5</soft_erp>
+          <kp>${wheel_kp}</kp>
+          <kd>${wheel_kd}</kd>
+          <max_vel>50.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${plastic_friction_mu1}</mu>
+          <mu2>${plastic_friction_mu2}</mu2>
+          <fdir1>1 0 0</fdir1>
+          <slip1>0.1</slip1>
+          <slip2>0.1</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="right_front_castor">
+    <mu1>${caster_metal_friction_mu1}</mu1>
+    <mu2>${caster_metal_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${metal_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>10.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${caster_metal_friction_mu1}</mu>
+          <mu2>${caster_metal_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.3</slip1>
+          <slip2>0.3</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="right_front_castor_wheel">
+    <mu1>${plastic_friction_mu1}</mu1>
+    <mu2>${plastic_friction_mu2}</mu2>
+    <kp>${wheel_kp}</kp>
+    <kd>${wheel_kd}</kd>
+    <restitution>${plastic_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.0005</soft_cfm>
+          <soft_erp>0.5</soft_erp>
+          <kp>${wheel_kp}</kp>
+          <kd>${wheel_kd}</kd>
+          <max_vel>50.0</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${plastic_friction_mu1}</mu>
+          <mu2>${plastic_friction_mu2}</mu2>
+          <fdir1>1 0 0</fdir1>
+          <slip1>0.1</slip1>
+          <slip2>0.1</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="lidar_link">
+    <mu1>${plastic_friction_mu1}</mu1>
+    <mu2>${plastic_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${plastic_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>0.01</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${plastic_friction_mu1}</mu>
+          <mu2>${plastic_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.2</slip1>
+          <slip2>0.2</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="depth_camera_link">
+    <mu1>${plastic_friction_mu1}</mu1>
+    <mu2>${plastic_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${plastic_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>0.01</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${plastic_friction_mu1}</mu>
+          <mu2>${plastic_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.2</slip1>
+          <slip2>0.2</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+  <gazebo reference="radar_link">
+    <mu1>${plastic_friction_mu1}</mu1>
+    <mu2>${plastic_friction_mu2}</mu2>
+    <kp>${standard_kp}</kp>
+    <kd>${standard_kd}</kd>
+    <restitution>${plastic_restitution}</restitution>
+    <selfCollide>false</selfCollide>
+    <gravity>true</gravity>
+    <surface>
+      <contact>
+        <ode>
+          <soft_cfm>0.001</soft_cfm>
+          <soft_erp>0.2</soft_erp>
+          <kp>${standard_kp}</kp>
+          <kd>${standard_kd}</kd>
+          <max_vel>0.01</max_vel>
+          <min_depth>0.0001</min_depth>
+        </ode>
+      </contact>
+      <friction>
+        <ode>
+          <mu>${plastic_friction_mu1}</mu>
+          <mu2>${plastic_friction_mu2}</mu2>
+          <fdir1>0 0 0</fdir1>
+          <slip1>0.2</slip1>
+          <slip2>0.2</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>
+
+</robot>
