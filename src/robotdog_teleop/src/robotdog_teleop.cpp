@@ -1,56 +1,45 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <termios.h>
-#include <map>
 #include "robotdog_msgs/msg/keyboard_ctrl_cmd.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "geometry_msgs/msg/twist.hpp"
 
 // Reminder message
 const char* msg = R"(
-Reading from the keyboard and Publishing to Twist!
----------------------------
-Moving around:
-   u    i    o
-   j    k    l
-   m    ,    .
-For Holonomic mode (strafing), hold down the shift key:
----------------------------
-   U    I    O
-   J    K    L
-   M    <    >
----------------------------
-Simple Teleoperation with arrow keys
-          ⇧
-        ⇦   ⇨
-          ⇩
-
-          A
-        D   C
-          B
-
----------------------------
-t : up (+z)
-b : down (-z)
-s/S : stop
-q/z : increase/decrease max speeds by 10%
-w/x : increase/decrease only linear speed by 10%
-e/c : increase/decrease only angular speed by 10%
-NOTE : Increasing or Decreasing will take affect live on the moving robot.
-      Consider Stopping the robot before changing it.
-CTRL-C to quit
-THIS IS A EXACT REPLICA OF https://github.com/ros-teleop/teleop_twist_keyboard 
-WITH SOME ADD-ONS BUT IMPLEMENTED WITH C++ and ROS2-foxy.
+========================================
+Robot Dog Keyboard Teleoperation
+========================================
+State Control:
+  0 : Activate START (robot stands up)
+  1 : Activate WALK (requires START)
+  2 : Activate SIDE_MOVE (requires START)
+  
+Gait Control:
+  g : Set gait_type to 1
+  
+Movement Control (requires WALK to be active):
+  i : Move forward
+  , : Move backward
+  j : Turn left
+  l : Turn right
+  k : Stop movement
+  
+Gait Step Adjustment:
+  w/s : Increase/Decrease step length X by 0.05
+  a/d : Increase/Decrease step length Y by 0.05
+  t/b : Increase/Decrease swing height by 0.5
+  
+  r : Reset gait_step to default values
+  
+Robot Pose Control:
+  Arrow Up/Down    : Adjust height (+/- 0.02)
+  Arrow Left/Right : Adjust yaw (+/- 0.1 rad)
+  
+Other:
+  SPACE : Emergency stop (resets all states)
+  CTRL-C : Quit program
+========================================
 )";
-
-// Init variables
-float x_length(0.5); // Linear velocity (m/s)
-float y_length(0.0); // Angular velocity (rad/s)
-float height_swing(5.0);
-char key(' ');
-bool start = false;
-bool walk = false;
-bool straf = false;
 
 // For non-blocking keyboard inputs
 int getch(void)
@@ -59,11 +48,9 @@ int getch(void)
   struct termios oldt;
   struct termios newt;
 
-  // Store old settings, and copy to new settings
   tcgetattr(STDIN_FILENO, &oldt);
   newt = oldt;
 
-  // Make required changes and apply the settings
   newt.c_lflag &= ~(ICANON | ECHO);
   newt.c_iflag |= IGNBRK;
   newt.c_iflag &= ~(INLCR | ICRNL | IXON | IXOFF);
@@ -72,115 +59,265 @@ int getch(void)
   newt.c_cc[VTIME] = 0;
   tcsetattr(fileno(stdin), TCSANOW, &newt);
 
-  // Get the current character
   ch = getchar();
 
-  // Reapply old settings
   tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
 
   return ch;
 }
 
+void printStatus(const robotdog_msgs::msg::KeyboardCtrlCmd& msg)
+{
+  printf("\r[START:%s | WALK:%s | SIDE:%s] Gait:%d | Step(%.2f,%.2f,%.2f) | Pose_H:%.2f Yaw:%.2f        ",
+         msg.states[0] ? "ON" : "OFF",
+         msg.states[1] ? "ON" : "OFF",
+         msg.states[2] ? "ON" : "OFF",
+         msg.gait_type,
+         msg.gait_step.x,
+         msg.gait_step.y,
+         msg.gait_step.z,
+         msg.pose.position.z,
+         msg.pose.orientation.z);
+  fflush(stdout);
+}
 
-int main(int argc, char** argv){
+int main(int argc, char** argv)
+{
+  // Node initialization
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("robotdog_teleop");
+  
+  // Publisher
+  auto pub = node->create_publisher<robotdog_msgs::msg::KeyboardCtrlCmd>("/teleopkeyboard", 10);
 
-  // node init
-  rclcpp::init(argc,argv);
-  auto node = rclcpp::Node::make_shared("teleop");
-  // define publisher
-  auto _pub = node->create_publisher<robotdog_msgs::msg::KeyboardCtrlMsg>("/teleopkeyboard", 10);
+  // Initialize message
+  robotdog_msgs::msg::KeyboardCtrlCmd ctrl_msg;
+  
+  // Initialize states
+  ctrl_msg.states[0] = false;  // start
+  ctrl_msg.states[1] = false;  // walk
+  ctrl_msg.states[2] = false;  // side_move
+  
+  // Initialize gait
+  ctrl_msg.gait_type = 0;
+  
+  // Initialize gait_step (default values)
+  ctrl_msg.gait_step.x = 0.0;   // steplen_x
+  ctrl_msg.gait_step.y = 0.0;   // steplen_y
+  ctrl_msg.gait_step.z = 0.05;  // swing_height
+  
+  // Initialize pose
+  ctrl_msg.pose.position.x = 0.0;   // slant_x
+  ctrl_msg.pose.position.y = 0.0;   // slant_y
+  ctrl_msg.pose.position.z = 0.3;   // height
+  ctrl_msg.pose.orientation.x = 0.0; // roll
+  ctrl_msg.pose.orientation.y = 0.0; // pitch
+  ctrl_msg.pose.orientation.z = 0.0; // yaw
 
-  robotdog_msgs::msg::KeyboardCtrlMsg Keyboardctrl;
   printf("%s", msg);
-  printf("\nNow x_length is %f , y_length is %f and swing_height is %f | Last command: \n", x_length, y_length, height_swing);
+  printStatus(ctrl_msg);
 
-  while(rclcpp::ok()){
-    // get the pressed key
+  char key = ' ';
+
+  while(rclcpp::ok())
+  {
     key = getch();
-// we have turned on the robot to just stand up
-    if(key =='0'){
-      start = true;
-      states[0] == true;
-      printf("The robot has stood up");
-    }
-// we have turned on the robot to be ready to walk
-    if(key =='1' && start = true){
-        walk = true;
-        states[1] == true;
-        printf("The robot is ready to walk");
-    }
-    if(key == 'i' && start = true && walk ==true){
-        x_length = 0.5; // Linear velocity (m/s)
-        y_length = 0.0; // Angular velocity (rad/s)
-        height_swing = 5.0;  
-    }
-    if(key == ',' && start = true && walk ==true){
-        x_length = -0.5; // Linear velocity (m/s)
-        y_length = 0.0; // Angular velocity (rad/s)
-        height_swing = 5.0;  
-    }
-    //'C' and 'D' represent the Right and Left arrow keys consecutively 
-    else if(key=='C'||key=='D'){
-      th = Avel(key,th);
-      y = 0.0;
-      z = 0.0;
-      printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, turn*th, key);
-    }
 
-    else if (moveBindings.count(key) == 1)
+    // State control
+    if(key == '0')
     {
-      // Grab the direction data
-      x = moveBindings[key][0];
-      y = moveBindings[key][1];
-      z = moveBindings[key][2];
-      th = moveBindings[key][3];
-
-      printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed, turn, key);
-    } 
-    // Otherwise if it corresponds to a key in speedBindings
-    else if (speedBindings.count(key) == 1)
-    {
-      // Grab the speed data
-      speed = speed * speedBindings[key][0];
-      turn = turn * speedBindings[key][1];
-
-      printf("\nNow top Speed is %f and turn is %f | Last command: %c \n\t\tCurrent speed might be affected\n", speed, turn, key);
-    }
-
-    // Otherwise, set the robot to stop
-    else
-    { if (key=='s'||key=='S'){
-      x = 0;
-      y = 0;
-      z = 0;
-      th = 0;
-      printf("\n\t\tRobot Stopped..!! \n");
-      printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, turn*th, key);
-    }
-      // If ctrl-C (^C) was pressed, terminate the program
-      else if (key == '\x03')
+      ctrl_msg.states[0] = !ctrl_msg.states[0];
+      if(!ctrl_msg.states[0])
       {
-        printf("\n\n    ☺  Give it a Star :: https://github.com/1at7/teleop_cpp_ros2 ☺ \n\n");
-        break;
+        // If START is deactivated, deactivate WALK and SIDE_MOVE
+        ctrl_msg.states[1] = false;
+        ctrl_msg.states[2] = false;
+        ctrl_msg.gait_step.x = 0.0;
+        ctrl_msg.gait_step.y = 0.0;
+      }
+      printf("\n[INFO] START: %s\n", ctrl_msg.states[0] ? "ACTIVATED" : "DEACTIVATED");
+    }
+    else if(key == '1')
+    {
+      if(ctrl_msg.states[0])
+      {
+        ctrl_msg.states[1] = !ctrl_msg.states[1];
+        if(!ctrl_msg.states[1])
+        {
+          ctrl_msg.gait_step.x = 0.0;
+          ctrl_msg.gait_step.y = 0.0;
+        }
+        printf("\n[INFO] WALK: %s\n", ctrl_msg.states[1] ? "ACTIVATED" : "DEACTIVATED");
       }
       else
-        printf("\rCurrent: speed %f\tturn %f | Invalid command! %c", speed*x, turn*th, key);
+      {
+        printf("\n[WARN] Cannot activate WALK: START not active!\n");
+      }
+    }
+    else if(key == '2')
+    {
+      if(ctrl_msg.states[0])
+      {
+        ctrl_msg.states[2] = !ctrl_msg.states[2];
+        printf("\n[INFO] SIDE_MOVE: %s\n", ctrl_msg.states[2] ? "ACTIVATED" : "DEACTIVATED");
+      }
+      else
+      {
+        printf("\n[WARN] Cannot activate SIDE_MOVE: START not active!\n");
+      }
+    }
+    
+    // Gait type control
+    else if(key == 'g')
+    {
+      ctrl_msg.gait_type = 1;
+      printf("\n[INFO] Gait type set to: 1\n");
+    }
+    
+    // Movement control (requires WALK to be active)
+    else if(key == 'i')
+    {
+      if(ctrl_msg.states[1])
+      {
+        ctrl_msg.gait_step.x = 0.3;  // Forward
+        ctrl_msg.gait_step.y = 0.0;
+      }
+      else
+      {
+        printf("\n[WARN] WALK not active!\n");
+      }
+    }
+    else if(key == ',')
+    {
+      if(ctrl_msg.states[1])
+      {
+        ctrl_msg.gait_step.x = -0.3;  // Backward
+        ctrl_msg.gait_step.y = 0.0;
+      }
+      else
+      {
+        printf("\n[WARN] WALK not active!\n");
+      }
+    }
+    else if(key == 'j')
+    {
+      if(ctrl_msg.states[1])
+      {
+        ctrl_msg.gait_step.x = 0.0;
+        ctrl_msg.gait_step.y = 0.2;  // Turn left
+      }
+      else
+      {
+        printf("\n[WARN] WALK not active!\n");
+      }
+    }
+    else if(key == 'l')
+    {
+      if(ctrl_msg.states[1])
+      {
+        ctrl_msg.gait_step.x = 0.0;
+        ctrl_msg.gait_step.y = -0.2;  // Turn right
+      }
+      else
+      {
+        printf("\n[WARN] WALK not active!\n");
+      }
+    }
+    else if(key == 'k')
+    {
+      ctrl_msg.gait_step.x = 0.0;
+      ctrl_msg.gait_step.y = 0.0;
+      printf("\n[INFO] Movement stopped\n");
+    }
+    
+    // Gait step adjustments
+    else if(key == 'w')
+    {
+      ctrl_msg.gait_step.x += 0.05;
+      printf("\n[INFO] Step X increased: %.2f\n", ctrl_msg.gait_step.x);
+    }
+    else if(key == 's')
+    {
+      ctrl_msg.gait_step.x -= 0.05;
+      printf("\n[INFO] Step X decreased: %.2f\n", ctrl_msg.gait_step.x);
+    }
+    else if(key == 'a')
+    {
+      ctrl_msg.gait_step.y += 0.05;
+      printf("\n[INFO] Step Y increased: %.2f\n", ctrl_msg.gait_step.y);
+    }
+    else if(key == 'd')
+    {
+      ctrl_msg.gait_step.y -= 0.05;
+      printf("\n[INFO] Step Y decreased: %.2f\n", ctrl_msg.gait_step.y);
+    }
+    else if(key == 't')
+    {
+      ctrl_msg.gait_step.z += 0.01;
+      printf("\n[INFO] Swing height increased: %.2f\n", ctrl_msg.gait_step.z);
+    }
+    else if(key == 'b')
+    {
+      ctrl_msg.gait_step.z -= 0.01;
+      if(ctrl_msg.gait_step.z < 0.01) ctrl_msg.gait_step.z = 0.01;
+      printf("\n[INFO] Swing height decreased: %.2f\n", ctrl_msg.gait_step.z);
+    }
+    else if(key == 'r')
+    {
+      ctrl_msg.gait_step.x = 0.0;
+      ctrl_msg.gait_step.y = 0.0;
+      ctrl_msg.gait_step.z = 0.05;
+      printf("\n[INFO] Gait step reset to defaults\n");
+    }
+    
+    // Pose adjustments (arrow keys)
+    else if(key == 'A')  // Arrow Up
+    {
+      ctrl_msg.pose.position.z += 0.02;
+      printf("\n[INFO] Height increased: %.2f\n", ctrl_msg.pose.position.z);
+    }
+    else if(key == 'B')  // Arrow Down
+    {
+      ctrl_msg.pose.position.z -= 0.02;
+      if(ctrl_msg.pose.position.z < 0.1) ctrl_msg.pose.position.z = 0.1;
+      printf("\n[INFO] Height decreased: %.2f\n", ctrl_msg.pose.position.z);
+    }
+    else if(key == 'C')  // Arrow Right
+    {
+      ctrl_msg.pose.orientation.z -= 0.1;
+      printf("\n[INFO] Yaw adjusted: %.2f\n", ctrl_msg.pose.orientation.z);
+    }
+    else if(key == 'D')  // Arrow Left
+    {
+      ctrl_msg.pose.orientation.z += 0.1;
+      printf("\n[INFO] Yaw adjusted: %.2f\n", ctrl_msg.pose.orientation.z);
+    }
+    
+    // Emergency stop
+    else if(key == ' ')
+    {
+      ctrl_msg.states[0] = false;
+      ctrl_msg.states[1] = false;
+      ctrl_msg.states[2] = false;
+      ctrl_msg.gait_step.x = 0.0;
+      ctrl_msg.gait_step.y = 0.0;
+      printf("\n[EMERGENCY] All states reset!\n");
+    }
+    
+    // Quit
+    else if(key == '\x03')  // CTRL-C
+    {
+      printf("\n\n[INFO] Shutting down teleop node...\n\n");
+      break;
     }
 
-    // Update the Twist message
-    twist.linear.x = x * speed;
-    twist.linear.y = y * speed;
-    twist.linear.z = z * speed;
-
-    twist.angular.x = 0;
-    twist.angular.y = 0;
-    twist.angular.z = th * turn;
+    // Publish message
+    pub->publish(ctrl_msg);
+    printStatus(ctrl_msg);
     
-
-    _pub->publish(twist);
-    rclcpp::spin_some(node);  
-
+    rclcpp::spin_some(node);
   }
-  return 0;
 
+  rclcpp::shutdown();
+  return 0;
 }

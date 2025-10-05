@@ -7,9 +7,25 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(robotdog_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+# Add executable
+add_executable(robotdog_teleop src/robotdog_teleop.cpp)
+
+# Link dependencies
+ament_target_dependencies(robotdog_teleop 
+  rclcpp 
+  robotdog_msgs 
+  geometry_msgs
+)
+
+# Install executable
+install(TARGETS
+  robotdog_teleop
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
