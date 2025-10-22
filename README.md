@@ -40,4 +40,49 @@ The workflow includes:
 1. Robot traverses crop fields using waypoints (autonomous/semi-autonomous navigation)
 2. Captures images of plants using the onboard camera
 3. Fuses GPS data to map the exact location of captured images
-4. Images are analyzed using a machine le
+4. Images are analyzed using a machine learning model to determine plant health
+5. Farmers can trace affected regions using GPS data for targeted action
+
+---
+
+## 🎯 Future Goals
+- Implement **GPS–Camera fusion** for accurate localization of detected plant issues
+- Enable **autonomous navigation** using ROS 2 navigation stack
+- Integrate **machine learning models** for plant disease and pest detection
+- Develop a **real-time monitoring dashboard**
+- Improve **terrain adaptability** and gait control algorithms
+
+---
+
+## 🧩 Key Features
+- 12-DOF quadruped design (3 DOF per leg)
+- ROS 2 and micro-ROS integration
+- Modular and lightweight mechanical design
+- GPS and IMU-based sensor fusion for navigation and stability
+- Expandable for future ML and vision-based tasks
+
+---
+
+## 🛠️ Current Progress
+- ✅ Mechanical design finalized using aluminium extrusions, acrylic, and 3D printed parts
+- ✅ Hardware integration of servo motors, drivers, and sensors
+- ⚙️ Working on ROS 2 and micro-ROS communication setup
+- 🔜 Next step: GPS–Camera data fusion and machine learning model integration
+
+---
+
+## 📸 Media
+_Add photos, CAD renders, or demo videos here when available._
+
+---
+
+## 👥 Contributors
+**Team:** Quadruped Robotics @ IIT Ropar  
+- Mechanical Design and Fabrication  
+- Electronics and Embedded Integration  
+- ROS 2 Software Development  
+
+---
+
+## 🧾 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
