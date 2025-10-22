@@ -72,16 +72,6 @@ The workflow includes:
 ---
 
 ## 📸 Media
-_Add photos, CAD renders, or demo videos here when available._
-
----
-
-## 👥 Contributors
-**Team:** Quadruped Robotics @ IIT Ropar  
-- Mechanical Design and Fabrication  
-- Electronics and Embedded Integration  
-- ROS 2 Software Development  
-
 ---
 
 ## 🧾 License
