@@ -72,7 +72,10 @@ The workflow includes:
 ---
 
 ## 📸 Media
----
+CAD Model
+<img width="1274" height="1137" alt="17613221658659206866258960243069" src="https://github.com/user-attachments/assets/f5eb925e-0b16-4f58-9641-ccb9edd77e6b" />
+
+
 
 ## 🧾 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
