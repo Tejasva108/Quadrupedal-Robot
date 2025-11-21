@@ -23,12 +23,12 @@
 # __________________________________________________________________________________|
 
 import numpy as np
-from command_manager.robotdog_variables import Body, Leg, Cmds
+from cmd_manager.robotdog_variables import Body, Leg, Cmds
 import time
-cmd = Cmds()
-leg = Leg()
-body = Body()
-from gait_planner import gait_planner
+# cmd = Cmds()
+# leg = Leg()
+# body = Body()
+# from gait_generator import gait_planner
 
 class BodyMotionPlanner():
     def __init__(self , cmd, leg, body, gait_planner):
@@ -76,10 +76,10 @@ class BodyMotionPlanner():
             self.body.yaw = self.cmd.body.yaw
             # if np.any(self.cmd.body.slant != self.prev_slant):
             #     self.leg.FR.pose.cur_coord[:2] = 
-            self.leg.FR.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[0,:]) + self.gait.FR_traj[:] + self.body.ZMP_handler[0,:]*np.array([0,1,0]) #+ self.cmd.body.slant[:]*np.array([1,1,0])
-            self.leg.FL.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[1,:]) + self.gait.FL_traj[:] + self.body.ZMP_handler[1,:]*np.array([0,1,0]) #+ self.cmd.body.slant[:]*np.array([1,-1,0])
-            self.leg.BR.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[2,:]) + self.gait.BR_traj[:] + self.body.ZMP_handler[2,:]*np.array([0,1,0])#+ self.cmd.body.slant[:]*np.array([1,1,0])
-            self.leg.BL.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[3,:]) + self.gait.BL_traj[:] + self.body.ZMP_handler[3,:]*np.array([0,1,0])#+ self.cmd.body.slant[:]*np.array([1,-1,0])
+            self.leg.FR.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[0,:]) + self.gait.FR_traj[:] #+ self.cmd.body.slant[:]*np.array([1,1,0])
+            self.leg.FL.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[1,:]) + self.gait.FL_traj[:] #+ self.cmd.body.slant[:]*np.array([1,-1,0])
+            self.leg.BR.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[2,:]) + self.gait.BR_traj[:]#+ self.cmd.body.slant[:]*np.array([1,1,0])
+            self.leg.BL.pose.cur_coord[:] = np.array(self.cmd.leg.foot_zero_pnt[3,:]) + self.gait.BL_traj[:]#+ self.cmd.body.slant[:]*np.array([1,-1,0])
             
             time.sleep(0.0002)
         # print(self.leg.FR.pose.cur_coord[:]) 

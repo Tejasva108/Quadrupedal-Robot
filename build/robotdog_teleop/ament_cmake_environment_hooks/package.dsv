@@ -1,0 +1,4 @@
+source;share/robotdog_teleop/local_setup.bash
+source;share/robotdog_teleop/local_setup.dsv
+source;share/robotdog_teleop/local_setup.sh
+source;share/robotdog_teleop/local_setup.zsh

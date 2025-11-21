@@ -1,0 +1,239 @@
+[0.008s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tejasva/robotdog_ws_copy/src/robotdog_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tejasva/robotdog_ws_copy/install/robotdog_msgs
+[0.053s] -- The C compiler identification is GNU 11.4.0
+[0.098s] -- The CXX compiler identification is GNU 11.4.0
+[0.104s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.168s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.168s] -- Detecting C compile features
+[0.169s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.239s] -- Detecting CXX compiler ABI info - done
+[0.244s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.244s] -- Detecting CXX compile features
+[0.245s] -- Detecting CXX compile features - done
+[0.247s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.376s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.427s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.456s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.519s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.556s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.560s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.567s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.577s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.589s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.624s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.627s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.644s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.652s] -- Looking for pthread.h
+[0.715s] -- Looking for pthread.h - found
+[0.715s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.777s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.778s] -- Found Threads: TRUE  
+[0.819s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.827s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.017s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.490s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.510s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.512s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.535s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.535s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.535s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.535s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.554s] -- Found PythonExtra: .so  
+[1.606s] -- Added test 'lint_cmake' to check CMake code style
+[1.607s] -- Added test 'xmllint' to check XML markup files
+[1.612s] -- Configuring done
+[1.644s] -- Generating done
+[1.653s] -- Build files have been written to: /home/tejasva/robotdog_ws_copy/build/robotdog_msgs
+[1.662s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tejasva/robotdog_ws_copy/src/robotdog_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tejasva/robotdog_ws_copy/install/robotdog_msgs
+[1.663s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_msgs -- -j16 -l16
+[1.698s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.707s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.714s] [  5%] Built target ament_cmake_python_symlink_robotdog_msgs
+[1.938s] running egg_info
+[1.938s] creating robotdog_msgs.egg-info
+[1.938s] writing robotdog_msgs.egg-info/PKG-INFO
+[1.938s] writing dependency_links to robotdog_msgs.egg-info/dependency_links.txt
+[1.938s] writing top-level names to robotdog_msgs.egg-info/top_level.txt
+[1.939s] writing manifest file 'robotdog_msgs.egg-info/SOURCES.txt'
+[1.940s] reading manifest file 'robotdog_msgs.egg-info/SOURCES.txt'
+[1.940s] writing manifest file 'robotdog_msgs.egg-info/SOURCES.txt'
+[1.964s] [  5%] Built target ament_cmake_python_build_robotdog_msgs_egg
+[1.995s] [  5%] Built target robotdog_msgs__cpp
+[1.997s] [ 10%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__functions.c.o[0m
+[1.997s] [ 10%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotdog_msgs/msg/detail/geometry__functions.c.o[0m
+[2.005s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.005s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.005s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.040s] [ 20%] [32m[1mLinking C shared library librobotdog_msgs__rosidl_generator_c.so[0m
+[2.075s] [ 20%] Built target robotdog_msgs__rosidl_generator_c
+[2.084s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.085s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.085s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.286s] [ 30%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotdog_msgs/msg/geometry__type_support.cpp.o[0m
+[2.286s] [ 33%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotdog_msgs/msg/keyboard_ctrl_cmd__type_support.cpp.o[0m
+[2.298s] [ 38%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.cpp.o[0m
+[2.298s] [ 38%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotdog_msgs/msg/detail/geometry__type_support.cpp.o[0m
+[2.312s] [ 41%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotdog_msgs/msg/detail/dds_fastrtps/keyboard_ctrl_cmd__type_support.cpp.o[0m
+[2.315s] [ 43%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotdog_msgs/msg/detail/dds_fastrtps/geometry__type_support.cpp.o[0m
+[2.380s] [ 46%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotdog_msgs/msg/keyboard_ctrl_cmd__type_support.cpp.o[0m
+[2.381s] [ 48%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotdog_msgs/msg/geometry__type_support.cpp.o[0m
+[2.410s] [ 53%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.c.o[0m
+[2.410s] [ 53%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotdog_msgs/msg/detail/geometry__type_support.c.o[0m
+[2.413s] [ 56%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support_c.cpp.o[0m
+[2.416s] [ 58%] [32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotdog_msgs/msg/detail/geometry__type_support_c.cpp.o[0m
+[2.424s] [ 61%] [32m[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_c.so[0m
+[2.456s] [ 64%] [32m[1mLinking C shared library librobotdog_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.470s] [ 64%] Built target robotdog_msgs__rosidl_typesupport_c
+[2.494s] [ 64%] Built target robotdog_msgs__rosidl_typesupport_introspection_c
+[2.563s] [ 66%] [32m[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_cpp.so[0m
+[2.608s] [ 66%] Built target robotdog_msgs__rosidl_typesupport_cpp
+[2.681s] [ 69%] [32m[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.696s] [ 71%] [32m[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.737s] [ 74%] [32m[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.759s] [ 74%] Built target robotdog_msgs__rosidl_typesupport_introspection_cpp
+[2.768s] [ 74%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_cpp
+[2.804s] [ 74%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_c
+[2.821s] [ 74%] Built target robotdog_msgs
+[2.839s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.212s] [ 76%] Built target robotdog_msgs__py
+[3.231s] [ 82%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotdog_msgs/msg/_geometry_s.c.o[0m
+[3.232s] [ 82%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotdog_msgs/msg/_keyboard_ctrl_cmd_s.c.o[0m
+[3.313s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/robotdog_msgs/librobotdog_msgs__rosidl_generator_py.so[0m
+[3.349s] [ 84%] Built target robotdog_msgs__rosidl_generator_py
+[3.368s] [ 92%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.368s] [ 92%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.368s] [ 92%] [32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.451s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.452s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.452s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.487s] [100%] Built target robotdog_msgs__rosidl_typesupport_c__pyext
+[3.487s] [100%] Built target robotdog_msgs__rosidl_typesupport_introspection_c__pyext
+[3.487s] [100%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.497s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_msgs -- -j16 -l16
+[3.506s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_msgs
+[3.512s] -- Install configuration: ""
+[3.513s] -- Execute custom install script
+[3.513s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/rosidl_interfaces/robotdog_msgs
+[3.521s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__functions.h
+[3.529s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__struct.h
+[3.537s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__type_support.h
+[3.545s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__functions.h
+[3.552s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__struct.h
+[3.559s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.h
+[3.566s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/geometry.h
+[3.573s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/keyboard_ctrl_cmd.h
+[3.580s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.587s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/library_path.sh
+[3.595s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/library_path.dsv
+[3.602s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_fastrtps_c.h
+[3.610s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_fastrtps_c.h
+[3.617s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.625s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__builder.hpp
+[3.632s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__struct.hpp
+[3.640s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__traits.hpp
+[3.648s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__type_support.hpp
+[3.655s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__builder.hpp
+[3.662s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__struct.hpp
+[3.670s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__traits.hpp
+[3.677s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.hpp
+[3.685s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/geometry.hpp
+[3.692s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/keyboard_ctrl_cmd.hpp
+[3.699s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.707s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_fastrtps_cpp.hpp
+[3.714s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[3.721s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.729s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_introspection_c.h
+[3.736s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_introspection_c.h
+[3.744s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.752s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_introspection_cpp.hpp
+[3.760s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_introspection_cpp.hpp
+[3.767s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/pythonpath.sh
+[3.774s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/pythonpath.dsv
+[3.781s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.789s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.796s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.803s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.811s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/__init__.py
+[3.818s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_c.c
+[3.825s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.833s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.840s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/librobotdog_msgs__rosidl_generator_py.so
+[3.848s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/__init__.py
+[3.855s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry.py
+[3.862s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry_s.c
+[3.870s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd.py
+[3.877s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd_s.c
+[3.885s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.892s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.900s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.907s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.908s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.908s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.908s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/KeyboardCtrlCmd.idl
+[3.916s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/Geometry.idl
+[3.924s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/KeyboardCtrlCmd.msg
+[3.932s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/Geometry.msg
+[3.939s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/package_run_dependencies/robotdog_msgs
+[3.947s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/parent_prefix_path/robotdog_msgs
+[3.955s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/ament_prefix_path.sh
+[3.962s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/ament_prefix_path.dsv
+[3.970s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/path.sh
+[3.977s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/path.dsv
+[3.985s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.bash
+[3.992s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.sh
+[3.999s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.zsh
+[4.007s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.dsv
+[4.015s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/package.dsv
+[4.022s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/packages/robotdog_msgs
+[4.030s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake-extras.cmake
+[4.038s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.045s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.053s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.061s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.068s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.076s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.083s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgsConfig.cmake
+[4.091s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgsConfig-version.cmake
+[4.098s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/package.xml
+[4.105s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_c.so
+[4.106s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_c.so" to ""
+[4.106s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_c.so
+[4.107s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.107s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.107s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.107s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_c.so
+[4.107s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.107s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_c.so
+[4.108s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_c.so" to ""
+[4.108s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_cpp.so
+[4.108s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.108s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_cpp.so
+[4.109s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_cpp.so" to ""
+[4.136s] Listing '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs'...
+[4.137s] Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/__init__.py'...
+[4.137s] Listing '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg'...
+[4.137s] Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/__init__.py'...
+[4.137s] Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry.py'...
+[4.137s] Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd.py'...
+[4.140s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_py.so
+[4.140s] -- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_py.so" to ""
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cExport.cmake
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cppExport.cmake
+[4.141s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cExport.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.142s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.143s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cppExport.cmake
+[4.143s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.143s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_pyExport.cmake
+[4.143s] -- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.146s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_msgs

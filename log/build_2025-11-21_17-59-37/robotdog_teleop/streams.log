@@ -1,0 +1,26 @@
+[0.320s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_teleop -- -j16 -l16
+[0.370s] [35m[1mConsolidate compiler generated dependencies of target robotdog_teleop[0m
+[0.400s] [ 50%] [32mBuilding CXX object CMakeFiles/robotdog_teleop.dir/src/robotdog_teleop.cpp.o[0m
+[4.645s] [100%] [32m[1mLinking CXX executable robotdog_teleop[0m
+[4.810s] [100%] Built target robotdog_teleop
+[4.823s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_teleop -- -j16 -l16
+[4.824s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_teleop
+[4.832s] -- Install configuration: ""
+[4.833s] -- Execute custom install script
+[4.833s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/lib/robotdog_teleop/robotdog_teleop
+[4.834s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/package_run_dependencies/robotdog_teleop
+[4.834s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/parent_prefix_path/robotdog_teleop
+[4.834s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.sh
+[4.834s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.dsv
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.sh
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.dsv
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.bash
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.sh
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.zsh
+[4.835s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.dsv
+[4.835s] -- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.dsv
+[4.846s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/packages/robotdog_teleop
+[4.846s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig.cmake
+[4.846s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig-version.cmake
+[4.846s] -- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.xml
+[4.849s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_teleop

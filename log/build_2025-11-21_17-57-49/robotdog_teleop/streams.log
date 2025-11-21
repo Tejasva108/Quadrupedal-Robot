@@ -1,0 +1,11 @@
+[0.365s] Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_teleop -- -j16 -l16
+[0.481s] [ 50%] [32mBuilding CXX object CMakeFiles/robotdog_teleop.dir/src/robotdog_teleop.cpp.o[0m
+[3.004s] [01m[K/home/tejasva/robotdog_ws_copy/src/robotdog_teleop/src/robotdog_teleop.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.004s] [01m[K/home/tejasva/robotdog_ws_copy/src/robotdog_teleop/src/robotdog_teleop.cpp:130:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _states_type = struct std::array<bool, 3>[m[K’ {aka ‘[01m[Kstruct std::array<bool, 3>[m[K’} has no member named ‘[01m[Kresize[m[K’; did you mean ‘[01m[Ksize[m[K’?
+[3.004s]   130 |     ctrl_msg.states.[01;31m[Kresize[m[K(3, false);
+[3.004s]       |                     [01;31m[K^~~~~~[m[K
+[3.004s]       |                     [32m[Ksize[m[K
+[3.656s] gmake[2]: *** [CMakeFiles/robotdog_teleop.dir/build.make:76: CMakeFiles/robotdog_teleop.dir/src/robotdog_teleop.cpp.o] Error 1
+[3.657s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robotdog_teleop.dir/all] Error 2
+[3.657s] gmake: *** [Makefile:146: all] Error 2
+[3.659s] Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tejasva/robotdog_ws_copy/install/robotdog_control:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_teleop -- -j16 -l16

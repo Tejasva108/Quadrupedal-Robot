@@ -1,0 +1,98 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <!-- Declare interfaces for each joint (must match URDF joint names exactly) -->
+    <joint name="FL_Hip_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0</param>
+      </state_interface>
+
+    </joint>
+
+    <joint name="FR_Hip_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0</param>
+      </state_interface>
+    </joint>
+
+    <joint name="BL_Hip_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0</param>
+      </state_interface>
+    </joint>
+
+    <joint name="BR_Hip_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0</param>
+      </state_interface>
+    </joint>
+
+    <!-- Upper joints -->
+    <joint name="FL_Upper_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="FR_Upper_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="BL_Upper_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="BR_Upper_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+
+    <!-- Lower joints -->
+    <joint name="FL_Lower_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="FR_Lower_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="BL_Lower_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+    <joint name="BR_Lower_Joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.22</param>
+      </state_interface>
+    </joint>
+  </ros2_control>
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>$(find robotdog_description)/config/robotdog_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+</robot>
+<!-- Gazebo plugin (minimal) -->
+

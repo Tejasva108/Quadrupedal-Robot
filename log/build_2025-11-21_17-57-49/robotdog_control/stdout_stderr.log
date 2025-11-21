@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing robotdog_control.egg-info/PKG-INFO
+writing dependency_links to robotdog_control.egg-info/dependency_links.txt
+writing entry points to robotdog_control.egg-info/entry_points.txt
+writing requirements to robotdog_control.egg-info/requires.txt
+writing top-level names to robotdog_control.egg-info/top_level.txt
+reading manifest file 'robotdog_control.egg-info/SOURCES.txt'
+writing manifest file 'robotdog_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tejasva/robotdog_ws_copy/install/robotdog_control/lib/python3.10/site-packages/robotdog-control.egg-link (link to .)
+Installing IK_node script to /home/tejasva/robotdog_ws_copy/install/robotdog_control/lib/robotdog_control
+Installing cmd_manager_node script to /home/tejasva/robotdog_ws_copy/install/robotdog_control/lib/robotdog_control
+
+Installed /home/tejasva/robotdog_ws_copy/build/robotdog_control
+running symlink_data

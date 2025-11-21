@@ -1,0 +1,7 @@
+{
+  "package_name": "robotdog_msgs",
+  "non_idl_tuples": [
+    "/home/tejasva/robotdog_ws_copy/src/robotdog_msgs:msg/KeyboardCtrlCmd.msg",
+    "/home/tejasva/robotdog_ws_copy/src/robotdog_msgs:msg/Geometry.msg"
+  ]
+}

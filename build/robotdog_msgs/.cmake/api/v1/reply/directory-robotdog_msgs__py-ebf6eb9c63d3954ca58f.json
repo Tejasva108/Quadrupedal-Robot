@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robotdog_msgs__py",
+		"source" : "/home/tejasva/robotdog_ws_copy/build/robotdog_msgs/robotdog_msgs__py"
+	}
+}

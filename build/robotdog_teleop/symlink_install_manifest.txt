@@ -1,0 +1,16 @@
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/lib/robotdog_teleop/robotdog_teleop
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/package_run_dependencies/robotdog_teleop
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/parent_prefix_path/robotdog_teleop
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.sh
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.dsv
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.sh
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.dsv
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.bash
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.sh
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.zsh
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.dsv
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.dsv
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/packages/robotdog_teleop
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig.cmake
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig-version.cmake
+/home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.xml

@@ -1,0 +1,291 @@
+[0.000000] (-) TimerEvent: {}
+[0.000575] (-) JobUnselected: {'identifier': 'robotdog_control'}
+[0.000622] (-) JobUnselected: {'identifier': 'robotdog_description'}
+[0.000641] (-) JobUnselected: {'identifier': 'robotdog_teleop'}
+[0.000659] (robotdog_msgs) JobQueued: {'identifier': 'robotdog_msgs', 'dependencies': OrderedDict()}
+[0.000679] (robotdog_msgs) JobStarted: {'identifier': 'robotdog_msgs'}
+[0.006965] (robotdog_msgs) JobProgress: {'identifier': 'robotdog_msgs', 'progress': 'cmake'}
+[0.007504] (robotdog_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/tejasva/robotdog_ws_copy/src/robotdog_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tejasva/robotdog_ws_copy/install/robotdog_msgs'], 'cwd': '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.installer,ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install'), ('CCACHE_TEMPDIR', '/tmp/ccache'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tejasva'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tejasva'), ('OLDPWD', '/home/tejasva'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('MANAGERPID', '1328'), ('SYSTEMD_EXEC_PID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26260'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tejasva'), ('JOURNAL_STREAM', '8:20143'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tejasva'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/tejasva/.local/bin:/home/tejasva/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tejasva-IdeaPad-5-Pro:@/tmp/.ICE-unix/1579,unix/tejasva-IdeaPad-5-Pro:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', 'b319e469f21c4cc6a722a77672b2714a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8a556899-0bf8-43ef-8143-bd0090d65e09'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_EXPORT_COMPILE_COMMANDS', 'ON'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053901] (robotdog_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.098713] (robotdog_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099832] (-) TimerEvent: {}
+[0.104871] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.163394] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.168689] (robotdog_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.168896] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.169193] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.171472] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199950] (-) TimerEvent: {}
+[0.239229] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.244766] (robotdog_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.245002] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.245348] (robotdog_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.247875] (robotdog_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300047] (-) TimerEvent: {}
+[0.376909] (robotdog_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400137] (-) TimerEvent: {}
+[0.427581] (robotdog_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.456490] (robotdog_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500240] (-) TimerEvent: {}
+[0.519144] (robotdog_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.556420] (robotdog_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.560938] (robotdog_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.567783] (robotdog_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.577164] (robotdog_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.589793] (robotdog_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600314] (-) TimerEvent: {}
+[0.624806] (robotdog_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.627441] (robotdog_msgs) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.644372] (robotdog_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.652869] (robotdog_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700434] (-) TimerEvent: {}
+[0.715339] (robotdog_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.715561] (robotdog_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.777516] (robotdog_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.778351] (robotdog_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800514] (-) TimerEvent: {}
+[0.819791] (robotdog_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.827954] (robotdog_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.900616] (-) TimerEvent: {}
+[1.000865] (-) TimerEvent: {}
+[1.017108] (robotdog_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.100980] (-) TimerEvent: {}
+[1.201219] (-) TimerEvent: {}
+[1.301445] (-) TimerEvent: {}
+[1.357413] (robotdog_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401531] (-) TimerEvent: {}
+[1.490123] (robotdog_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501609] (-) TimerEvent: {}
+[1.510447] (robotdog_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.512184] (robotdog_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.535543] (robotdog_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.535764] (robotdog_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.535865] (robotdog_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.535926] (robotdog_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.554381] (robotdog_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.601701] (-) TimerEvent: {}
+[1.606795] (robotdog_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.607566] (robotdog_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.612707] (robotdog_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.644243] (robotdog_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.653508] (robotdog_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/tejasva/robotdog_ws_copy/build/robotdog_msgs\n'}
+[1.662271] (robotdog_msgs) CommandEnded: {'returncode': 0}
+[1.662915] (robotdog_msgs) JobProgress: {'identifier': 'robotdog_msgs', 'progress': 'build'}
+[1.663871] (robotdog_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs', '--', '-j16', '-l16'], 'cwd': '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.installer,ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install'), ('CCACHE_TEMPDIR', '/tmp/ccache'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tejasva'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tejasva'), ('OLDPWD', '/home/tejasva'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('MANAGERPID', '1328'), ('SYSTEMD_EXEC_PID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26260'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tejasva'), ('JOURNAL_STREAM', '8:20143'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tejasva'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/tejasva/.local/bin:/home/tejasva/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tejasva-IdeaPad-5-Pro:@/tmp/.ICE-unix/1579,unix/tejasva-IdeaPad-5-Pro:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', 'b319e469f21c4cc6a722a77672b2714a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8a556899-0bf8-43ef-8143-bd0090d65e09'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_EXPORT_COMPILE_COMMANDS', 'ON'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.699024] (robotdog_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.701788] (-) TimerEvent: {}
+[1.707671] (robotdog_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.714708] (robotdog_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_robotdog_msgs\n'}
+[1.801897] (-) TimerEvent: {}
+[1.902145] (-) TimerEvent: {}
+[1.938153] (robotdog_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.938617] (robotdog_msgs) StdoutLine: {'line': b'creating robotdog_msgs.egg-info\n'}
+[1.938823] (robotdog_msgs) StdoutLine: {'line': b'writing robotdog_msgs.egg-info/PKG-INFO\n'}
+[1.938978] (robotdog_msgs) StdoutLine: {'line': b'writing dependency_links to robotdog_msgs.egg-info/dependency_links.txt\n'}
+[1.939106] (robotdog_msgs) StdoutLine: {'line': b'writing top-level names to robotdog_msgs.egg-info/top_level.txt\n'}
+[1.939223] (robotdog_msgs) StdoutLine: {'line': b"writing manifest file 'robotdog_msgs.egg-info/SOURCES.txt'\n"}
+[1.940674] (robotdog_msgs) StdoutLine: {'line': b"reading manifest file 'robotdog_msgs.egg-info/SOURCES.txt'\n"}
+[1.941070] (robotdog_msgs) StdoutLine: {'line': b"writing manifest file 'robotdog_msgs.egg-info/SOURCES.txt'\n"}
+[1.964590] (robotdog_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_robotdog_msgs_egg\n'}
+[1.995935] (robotdog_msgs) StdoutLine: {'line': b'[  5%] Built target robotdog_msgs__cpp\n'}
+[1.997564] (robotdog_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__functions.c.o\x1b[0m\n'}
+[1.997729] (robotdog_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotdog_msgs/msg/detail/geometry__functions.c.o\x1b[0m\n'}
+[2.002237] (-) TimerEvent: {}
+[2.005731] (robotdog_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.005905] (robotdog_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.005977] (robotdog_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.040850] (robotdog_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library librobotdog_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.075664] (robotdog_msgs) StdoutLine: {'line': b'[ 20%] Built target robotdog_msgs__rosidl_generator_c\n'}
+[2.085013] (robotdog_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.085223] (robotdog_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.085327] (robotdog_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.102352] (-) TimerEvent: {}
+[2.202653] (-) TimerEvent: {}
+[2.286645] (robotdog_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotdog_msgs/msg/geometry__type_support.cpp.o\x1b[0m\n'}
+[2.286844] (robotdog_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotdog_msgs/msg/keyboard_ctrl_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.298834] (robotdog_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.299058] (robotdog_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotdog_msgs/msg/detail/geometry__type_support.cpp.o\x1b[0m\n'}
+[2.302750] (-) TimerEvent: {}
+[2.312290] (robotdog_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotdog_msgs/msg/detail/dds_fastrtps/keyboard_ctrl_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.315119] (robotdog_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotdog_msgs/msg/detail/dds_fastrtps/geometry__type_support.cpp.o\x1b[0m\n'}
+[2.380443] (robotdog_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotdog_msgs/msg/keyboard_ctrl_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.381909] (robotdog_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotdog_msgs/msg/geometry__type_support.cpp.o\x1b[0m\n'}
+[2.402880] (-) TimerEvent: {}
+[2.409977] (robotdog_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.c.o\x1b[0m\n'}
+[2.410310] (robotdog_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotdog_msgs/msg/detail/geometry__type_support.c.o\x1b[0m\n'}
+[2.413095] (robotdog_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[2.416679] (robotdog_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotdog_msgs/msg/detail/geometry__type_support_c.cpp.o\x1b[0m\n'}
+[2.424369] (robotdog_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.456835] (robotdog_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library librobotdog_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.470966] (robotdog_msgs) StdoutLine: {'line': b'[ 64%] Built target robotdog_msgs__rosidl_typesupport_c\n'}
+[2.494919] (robotdog_msgs) StdoutLine: {'line': b'[ 64%] Built target robotdog_msgs__rosidl_typesupport_introspection_c\n'}
+[2.503002] (-) TimerEvent: {}
+[2.563972] (robotdog_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.603222] (-) TimerEvent: {}
+[2.608117] (robotdog_msgs) StdoutLine: {'line': b'[ 66%] Built target robotdog_msgs__rosidl_typesupport_cpp\n'}
+[2.681329] (robotdog_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.696388] (robotdog_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.703310] (-) TimerEvent: {}
+[2.737895] (robotdog_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librobotdog_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.759402] (robotdog_msgs) StdoutLine: {'line': b'[ 74%] Built target robotdog_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.768702] (robotdog_msgs) StdoutLine: {'line': b'[ 74%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.803401] (-) TimerEvent: {}
+[2.804186] (robotdog_msgs) StdoutLine: {'line': b'[ 74%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.822025] (robotdog_msgs) StdoutLine: {'line': b'[ 74%] Built target robotdog_msgs\n'}
+[2.839701] (robotdog_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.903497] (-) TimerEvent: {}
+[3.003729] (-) TimerEvent: {}
+[3.104272] (-) TimerEvent: {}
+[3.204564] (-) TimerEvent: {}
+[3.213001] (robotdog_msgs) StdoutLine: {'line': b'[ 76%] Built target robotdog_msgs__py\n'}
+[3.231842] (robotdog_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotdog_msgs/msg/_geometry_s.c.o\x1b[0m\n'}
+[3.232136] (robotdog_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotdog_msgs/msg/_keyboard_ctrl_cmd_s.c.o\x1b[0m\n'}
+[3.304671] (-) TimerEvent: {}
+[3.313861] (robotdog_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotdog_msgs/librobotdog_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.350017] (robotdog_msgs) StdoutLine: {'line': b'[ 84%] Built target robotdog_msgs__rosidl_generator_py\n'}
+[3.368654] (robotdog_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.368851] (robotdog_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.368919] (robotdog_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robotdog_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.404775] (-) TimerEvent: {}
+[3.452040] (robotdog_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.452217] (robotdog_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.452289] (robotdog_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.487294] (robotdog_msgs) StdoutLine: {'line': b'[100%] Built target robotdog_msgs__rosidl_typesupport_c__pyext\n'}
+[3.487486] (robotdog_msgs) StdoutLine: {'line': b'[100%] Built target robotdog_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.487568] (robotdog_msgs) StdoutLine: {'line': b'[100%] Built target robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.497935] (robotdog_msgs) CommandEnded: {'returncode': 0}
+[3.498539] (robotdog_msgs) JobProgress: {'identifier': 'robotdog_msgs', 'progress': 'install'}
+[3.504832] (-) TimerEvent: {}
+[3.506213] (robotdog_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs'], 'cwd': '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.installer,ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install'), ('CCACHE_TEMPDIR', '/tmp/ccache'), ('LANGUAGE', 'en_IN:en'), ('USER', 'tejasva'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tejasva'), ('OLDPWD', '/home/tejasva'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('MANAGERPID', '1328'), ('SYSTEMD_EXEC_PID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26260'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tejasva'), ('JOURNAL_STREAM', '8:20143'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tejasva'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/tejasva/.local/bin:/home/tejasva/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tejasva-IdeaPad-5-Pro:@/tmp/.ICE-unix/1579,unix/tejasva-IdeaPad-5-Pro:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', 'b319e469f21c4cc6a722a77672b2714a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8a556899-0bf8-43ef-8143-bd0090d65e09'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_EXPORT_COMPILE_COMMANDS', 'ON'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.512912] (robotdog_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.513395] (robotdog_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.513691] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/rosidl_interfaces/robotdog_msgs\n'}
+[3.521903] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__functions.h\n'}
+[3.529582] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__struct.h\n'}
+[3.537489] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__type_support.h\n'}
+[3.545420] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__functions.h\n'}
+[3.552569] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__struct.h\n'}
+[3.559569] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.h\n'}
+[3.566345] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/geometry.h\n'}
+[3.573326] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/keyboard_ctrl_cmd.h\n'}
+[3.580510] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.587724] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/library_path.sh\n'}
+[3.595179] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/library_path.dsv\n'}
+[3.602629] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_fastrtps_c.h\n'}
+[3.604919] (-) TimerEvent: {}
+[3.610257] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[3.617431] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.625257] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__builder.hpp\n'}
+[3.632883] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__struct.hpp\n'}
+[3.640573] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__traits.hpp\n'}
+[3.648122] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__type_support.hpp\n'}
+[3.655597] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__builder.hpp\n'}
+[3.663008] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__struct.hpp\n'}
+[3.670273] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__traits.hpp\n'}
+[3.677809] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__type_support.hpp\n'}
+[3.685256] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/geometry.hpp\n'}
+[3.692592] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/keyboard_ctrl_cmd.hpp\n'}
+[3.699877] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.705003] (-) TimerEvent: {}
+[3.707429] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.714541] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.721507] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.729179] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_introspection_c.h\n'}
+[3.736985] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_introspection_c.h\n'}
+[3.744848] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.752936] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/geometry__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.760395] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/include/robotdog_msgs/robotdog_msgs/msg/detail/keyboard_ctrl_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.767691] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/pythonpath.sh\n'}
+[3.774830] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/pythonpath.dsv\n'}
+[3.781925] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.789234] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.796586] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.803874] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.805081] (-) TimerEvent: {}
+[3.811734] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/__init__.py\n'}
+[3.818828] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.825926] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.833210] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/_robotdog_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.840905] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/librobotdog_msgs__rosidl_generator_py.so\n'}
+[3.848451] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/__init__.py\n'}
+[3.855617] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry.py\n'}
+[3.862780] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry_s.c\n'}
+[3.870375] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd.py\n'}
+[3.877964] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd_s.c\n'}
+[3.885646] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.892942] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.900234] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.905170] (-) TimerEvent: {}
+[3.907970] (robotdog_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.908231] (robotdog_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.908491] (robotdog_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.908725] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/KeyboardCtrlCmd.idl\n'}
+[3.916488] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/Geometry.idl\n'}
+[3.924120] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/KeyboardCtrlCmd.msg\n'}
+[3.932111] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/msg/Geometry.msg\n'}
+[3.940036] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/package_run_dependencies/robotdog_msgs\n'}
+[3.947872] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/parent_prefix_path/robotdog_msgs\n'}
+[3.955424] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/ament_prefix_path.sh\n'}
+[3.962827] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/ament_prefix_path.dsv\n'}
+[3.970385] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/path.sh\n'}
+[3.977724] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/environment/path.dsv\n'}
+[3.985250] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.bash\n'}
+[3.992633] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.sh\n'}
+[3.999682] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.zsh\n'}
+[4.005257] (-) TimerEvent: {}
+[4.007534] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/local_setup.dsv\n'}
+[4.015216] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/package.dsv\n'}
+[4.022816] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/ament_index/resource_index/packages/robotdog_msgs\n'}
+[4.030429] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.038272] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.045986] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.053494] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.061129] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.068744] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.076181] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.083885] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgsConfig.cmake\n'}
+[4.091121] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgsConfig-version.cmake\n'}
+[4.098709] (robotdog_msgs) StdoutLine: {'line': b'-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/package.xml\n'}
+[4.105328] (-) TimerEvent: {}
+[4.106080] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_c.so\n'}
+[4.106580] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_c.so" to ""\n'}
+[4.106698] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.107149] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.107228] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.107636] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.107711] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.108065] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.108135] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_c.so\n'}
+[4.108472] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.108546] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.108941] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.109008] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_cpp.so\n'}
+[4.109334] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.137076] (robotdog_msgs) StdoutLine: {'line': b"Listing '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs'...\n"}
+[4.137219] (robotdog_msgs) StdoutLine: {'line': b"Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/__init__.py'...\n"}
+[4.137283] (robotdog_msgs) StdoutLine: {'line': b"Listing '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg'...\n"}
+[4.137340] (robotdog_msgs) StdoutLine: {'line': b"Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/__init__.py'...\n"}
+[4.137391] (robotdog_msgs) StdoutLine: {'line': b"Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_geometry.py'...\n"}
+[4.137439] (robotdog_msgs) StdoutLine: {'line': b"Compiling '/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/local/lib/python3.10/dist-packages/robotdog_msgs/msg/_keyboard_ctrl_cmd.py'...\n"}
+[4.140621] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_py.so\n'}
+[4.141099] (robotdog_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/tejasva/robotdog_ws_copy/install/robotdog_msgs/lib/librobotdog_msgs__rosidl_generator_py.so" to ""\n'}
+[4.141193] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cExport.cmake\n'}
+[4.141378] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.141552] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.141710] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.141867] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.142029] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.142186] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.142340] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.142500] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.142665] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.142821] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.142983] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.143143] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.143305] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.143473] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/robotdog_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.143637] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.143786] (robotdog_msgs) StdoutLine: {'line': b'-- Installing: /home/tejasva/robotdog_ws_copy/install/robotdog_msgs/share/robotdog_msgs/cmake/export_robotdog_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.145938] (robotdog_msgs) CommandEnded: {'returncode': 0}
+[4.160889] (robotdog_msgs) JobEnded: {'identifier': 'robotdog_msgs', 'rc': 0}
+[4.161473] (-) EventReactorShutdown: {}

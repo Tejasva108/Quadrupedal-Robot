@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="robotdog_description"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <ros2_control name="MockRobotSystem" type="system">
+        <hardware>
+            <plugin>mock_components/GenericSystem</plugin>
+        </hardware>
+
+        <!-- Front Left Leg -->
+        <joint name="FL_Hip_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+        </joint>
+
+        <joint name="FL_Upper_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">-0.85</param>
+            </state_interface>
+        </joint>
+
+        <joint name="FL_Lower_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">-1.32</param>
+            </state_interface>
+        </joint>
+
+        <!-- Front Right Leg -->
+        <joint name="FR_Hip_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0</param>
+            </state_interface>
+        </joint>
+
+        <joint name="FR_Upper_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0.85</param>
+            </state_interface>
+        </joint>
+
+        <joint name="FR_Lower_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">1.32</param>
+            </state_interface>
+        </joint>
+
+        <!-- Back Left Leg -->
+        <joint name="BL_Hip_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+        </joint>
+
+        <joint name="BL_Upper_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">-0.85</param>
+            </state_interface>
+        </joint>
+
+        <joint name="BL_Lower_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">-1.32</param>
+            </state_interface>
+        </joint>
+
+        <!-- Back Right Leg -->
+        <joint name="BR_Hip_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+        </joint>
+
+        <joint name="BR_Upper_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">0.85</param>
+            </state_interface>
+        </joint>
+
+        <joint name="BR_Lower_Joint">
+            <command_interface name="position"/>
+            <state_interface name="position">
+                <param name="initial_value">1.32</param>
+            </state_interface>
+        </joint>
+    </ros2_control>
+</robot>

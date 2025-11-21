@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/tejasva/robotdog_ws_copy/build/robotdog_msgs/rosidl_generator_py/robotdog_msgs/robotdog_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "robotdog_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/robotdog_msgs")

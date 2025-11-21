@@ -1,0 +1,1 @@
+/home/tejasva/robotdog_ws_copy/build/robotdog_msgs/rosidl_generator_c/robotdog_msgs/msg/detail/geometry__type_support.h

@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target robotdog_teleop[0m
+[100%] Built target robotdog_teleop
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/lib/robotdog_teleop/robotdog_teleop
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/package_run_dependencies/robotdog_teleop
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/parent_prefix_path/robotdog_teleop
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.sh
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/environment/path.dsv
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.bash
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.sh
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.zsh
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/local_setup.dsv
+-- Symlinking: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.dsv
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/ament_index/resource_index/packages/robotdog_teleop
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig.cmake
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/cmake/robotdog_teleopConfig-version.cmake
+-- Up-to-date symlink: /home/tejasva/robotdog_ws_copy/install/robotdog_teleop/share/robotdog_teleop/package.xml

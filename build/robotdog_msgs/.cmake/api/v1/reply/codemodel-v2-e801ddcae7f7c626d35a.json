@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8996566ae2321bc6b73b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "robotdog_msgs__py",
+					"jsonFile" : "directory-robotdog_msgs__py-ebf6eb9c63d3954ca58f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tejasva/robotdog_ws_copy/build/robotdog_msgs/robotdog_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "robotdog_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robotdog_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robotdog_msgs_egg-0bd31f3c998c8337be41.json",
+					"name" : "ament_cmake_python_build_robotdog_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_robotdog_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_robotdog_msgs-c5a86c579092f14fa438.json",
+					"name" : "ament_cmake_python_symlink_robotdog_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs-646786b1273fc1a27bce.json",
+					"name" : "robotdog_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__cpp-fe643fb26e71d1d7384e.json",
+					"name" : "robotdog_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robotdog_msgs__py::@d3d10d574eb0c57ceb6d",
+					"jsonFile" : "target-robotdog_msgs__py-a094fa8211d78a3b6923.json",
+					"name" : "robotdog_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_generator_c-080a85834d035b08a844.json",
+					"name" : "robotdog_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_generator_py-32f87868819a1b3e91ba.json",
+					"name" : "robotdog_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_c-c5a770af5859257851e1.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_c__pyext-8b97e4530b864b807e25.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_cpp-8ac3eb631461b3c48d46.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_fastrtps_c-f060870ab2a3b656e6d3.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext-cfcda7739c6162bf16ee.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_fastrtps_cpp-d3e671336b609e4173a4.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_introspection_c-e0e75db72a71b8e797ca.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_introspection_c__pyext-6d56fcbcb489c6595d7b.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs__rosidl_typesupport_introspection_cpp-273a60b0b27730d96b42.json",
+					"name" : "robotdog_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotdog_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotdog_msgs_uninstall-3b4476a85d466f53bef7.json",
+					"name" : "robotdog_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5d963ab1c989b6300864.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tejasva/robotdog_ws_copy/build/robotdog_msgs",
+		"source" : "/home/tejasva/robotdog_ws_copy/src/robotdog_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,4 @@
+Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_msgs -- -j16 -l16
+Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tejasva/robotdog_ws_copy/build/robotdog_msgs -- -j16 -l16
+Invoking command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_msgs
+Invoked command in '/home/tejasva/robotdog_ws_copy/build/robotdog_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tejasva/robotdog_ws_copy/build/robotdog_msgs

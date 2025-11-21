@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "micro_ros_msgs__py",
+		"source" : "/home/tejasva/robotdog_ws_copy/build/micro_ros_msgs/micro_ros_msgs__py"
+	}
+}

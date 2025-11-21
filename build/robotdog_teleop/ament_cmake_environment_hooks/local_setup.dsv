@@ -1,0 +1,2 @@
+source;share/robotdog_teleop/environment/ament_prefix_path.sh
+source;share/robotdog_teleop/environment/path.sh
